@@ -1,4 +1,5 @@
 import cookieParser from 'cookie-parser';
+import cors from 'cors';
 import express, { Request, Response } from 'express';
 import notFound from './app/middleware/notFound';
 import router from './app/route';
@@ -7,7 +8,7 @@ const app = express();
 // parsers
 app.use(express.json());
 app.use(cookieParser());
-// app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors({ origin: 'https://portfolio-2-0-client.vercel.app' }));
 
 app.use('/api/v1', router);
 
