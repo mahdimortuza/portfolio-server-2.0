@@ -1,7 +1,9 @@
 export type TProject = {
   title: string;
   subTitle: string;
-  description: string;
+  descriptionPara1: string;
+  descriptionPara2: string;
+  descriptionPara3: string;
   image: string;
   category: string;
   liveLink: string;

@@ -8,7 +8,13 @@ const createProjectValidation = z.object({
     subTitle: z.string({
       invalid_type_error: 'Sub title must be a string',
     }),
-    description: z.string({
+    descriptionPara1: z.string({
+      invalid_type_error: 'Description must be a string',
+    }),
+    descriptionPara2: z.string({
+      invalid_type_error: 'Description must be a string',
+    }),
+    descriptionPara3: z.string({
       invalid_type_error: 'Description must be a string',
     }),
 

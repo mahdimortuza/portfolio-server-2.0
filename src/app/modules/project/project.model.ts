@@ -12,9 +12,17 @@ const projectSchema = new Schema<TProject>(
       type: String,
       required: [true, 'Sub title is required'],
     },
-    description: {
+    descriptionPara1: {
       type: String,
-      required: [true, 'Description is required'],
+      required: [true, 'Description para 1 is required'],
+    },
+    descriptionPara2: {
+      type: String,
+      required: [true, 'Description para 2 is required'],
+    },
+    descriptionPara3: {
+      type: String,
+      required: [true, 'Description para 3 is required'],
     },
     image: {
       type: String,
