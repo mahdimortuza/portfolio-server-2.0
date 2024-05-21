@@ -8,7 +8,13 @@ const createBlogValidation = z.object({
     image: z.string({
       invalid_type_error: 'Image must be a string',
     }),
-    blog: z.string({
+    blogPara1: z.string({
+      invalid_type_error: 'Blog must be a string',
+    }),
+    blogPara2: z.string({
+      invalid_type_error: 'Blog must be a string',
+    }),
+    blogPara3: z.string({
       invalid_type_error: 'Blog must be a string',
     }),
     category: z.string({
@@ -29,7 +35,17 @@ const updateBlogValidation = z.object({
         invalid_type_error: 'Image must be a string',
       })
       .optional(),
-    blog: z
+    blogPara1: z
+      .string({
+        invalid_type_error: 'Blog must be a string',
+      })
+      .optional(),
+    blogPara2: z
+      .string({
+        invalid_type_error: 'Blog must be a string',
+      })
+      .optional(),
+    blogPara3: z
       .string({
         invalid_type_error: 'Blog must be a string',
       })

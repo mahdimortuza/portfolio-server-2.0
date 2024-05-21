@@ -12,9 +12,17 @@ const blogSchema = new Schema<TBlog>(
       type: String,
       required: [true, 'Product image is required'],
     },
-    blog: {
+    blogPara1: {
       type: String,
-      required: [true, 'Product image is required'],
+      required: [true, 'Para 1 image is required'],
+    },
+    blogPara2: {
+      type: String,
+      required: [true, 'Para 1 image is required'],
+    },
+    blogPara3: {
+      type: String,
+      required: [true, 'Para 1 image is required'],
     },
     category: {
       type: String,
