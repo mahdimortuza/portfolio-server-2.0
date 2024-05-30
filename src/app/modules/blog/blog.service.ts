@@ -33,7 +33,7 @@ const updateSingleBlogIntoDb = async (id: string, payload: TBlog) => {
   });
   return result;
 };
-
+// Delete SIngle Blog From DB
 const deleteSingleBlogFromDb = async (id: string) => {
   const result = await Blog.findByIdAndDelete({ _id: id }, { new: true });
   return result;
