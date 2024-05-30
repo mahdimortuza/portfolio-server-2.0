@@ -3,6 +3,8 @@ import { blogSearchAbleFields } from './blog.constant';
 import { TBlog } from './blog.interface';
 import { Blog } from './blog.model';
 
+// Create Blog Into DB
+
 const createBlogIntoDb = async (payload: TBlog) => {
   const result = await Blog.create(payload);
   return result;
