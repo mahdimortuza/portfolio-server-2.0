@@ -36,7 +36,7 @@ const deleteSingleBlogFromDb = async (id: string) => {
   const result = await Blog.findByIdAndDelete({ _id: id }, { new: true });
   return result;
 };
-
+// Blog Services
 export const BlogServices = {
   createBlogIntoDb,
   getAllBlogsFromDb,
