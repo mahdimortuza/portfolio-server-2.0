@@ -7,6 +7,7 @@ const createBlogIntoDb = async (payload: TBlog) => {
   const result = await Blog.create(payload);
   return result;
 };
+// Get all blogs
 
 const getAllBlogsFromDb = async (query: Record<string, unknown>) => {
   const blogQuery = new QueryBuilder(Blog.find(), query)
