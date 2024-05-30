@@ -21,7 +21,7 @@ const getAllBlogsFromDb = async (query: Record<string, unknown>) => {
   const result = await blogQuery.modelQuery;
   return result;
 };
-
+// Get Single Blog From DB
 const getSingleBlogFromDb = async (id: string) => {
   const result = await Blog.findById(id);
   return result;
