@@ -24,7 +24,7 @@ const getSingleBlogFromDb = async (id: string) => {
   const result = await Blog.findById(id);
   return result;
 };
-
+// Update Single Blog Into DB
 const updateSingleBlogIntoDb = async (id: string, payload: TBlog) => {
   const result = await Blog.findOneAndUpdate({ _id: id }, payload, {
     new: true,
