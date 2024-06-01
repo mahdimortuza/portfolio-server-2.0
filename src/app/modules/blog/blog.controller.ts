@@ -51,6 +51,8 @@ const updateSingleBlog = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+// deleteSingleBlogFromDb
+
 const deleteSingleBlog = catchAsync(async (req: Request, res: Response) => {
   const { id } = req.params;
   const result = await BlogServices.deleteSingleBlogFromDb(id);
