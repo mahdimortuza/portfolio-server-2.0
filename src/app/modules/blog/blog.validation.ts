@@ -1,5 +1,6 @@
 import { z } from 'zod';
 
+// BlogValidation
 const createBlogValidation = z.object({
   body: z.object({
     title: z.string({
