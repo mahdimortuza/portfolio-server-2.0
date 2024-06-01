@@ -3,7 +3,7 @@ import httpStatus from 'http-status';
 import catchAsync from '../../utils/catchAsync';
 import sendResponse from '../../utils/sendResponse';
 import { BlogServices } from './blog.service';
-
+// createBlogIntoDb
 const createBlog = catchAsync(async (req, res) => {
   const blog = req.body;
   const result = await BlogServices.createBlogIntoDb(blog);
