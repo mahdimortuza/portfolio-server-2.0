@@ -64,6 +64,7 @@ const deleteSingleBlog = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+// BlogController
 export const BlogController = {
   createBlog,
   getAllBlogs,
