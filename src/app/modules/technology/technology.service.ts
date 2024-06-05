@@ -3,11 +3,13 @@ import { technologySearchAbleFields } from './technology.constant';
 import { TTechnology } from './technology.interface';
 import { Technology } from './technology.model';
 
+// create technology
 const createTechnologyIntoDb = async (payload: TTechnology) => {
   const result = await Technology.create(payload);
   return result;
 };
 
+// get all technologies
 const getAllTechnologiesFromDb = async (query: Record<string, unknown>) => {
   const technologyQuery = new QueryBuilder(Technology.find(), query)
     .search(technologySearchAbleFields)
