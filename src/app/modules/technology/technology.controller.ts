@@ -15,6 +15,7 @@ const createTechnology = catchAsync(async (req, res) => {
   });
 });
 
+// get all technologies
 const getAllTechnologies = catchAsync(async (req: Request, res: Response) => {
   const result = await TechnologyServices.getAllTechnologiesFromDb(req.query);
   sendResponse(res, {
@@ -25,6 +26,7 @@ const getAllTechnologies = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+// get single technology
 const getSingleTechnology = catchAsync(async (req: Request, res: Response) => {
   const { id } = req.params;
   const result = await TechnologyServices.getSingleTechnologyFromDb(id);
@@ -35,6 +37,8 @@ const getSingleTechnology = catchAsync(async (req: Request, res: Response) => {
     data: result,
   });
 });
+
+// update technology
 
 const updateSingleTechnology = catchAsync(
   async (req: Request, res: Response) => {
