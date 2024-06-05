@@ -3,6 +3,7 @@ import { projectSearchAbleFields } from './project.constant';
 import { TProject } from './project.interface';
 import { Project } from './project.model';
 
+// create project intoDB
 const createProjectIntoDb = async (payload: TProject) => {
   const result = await Project.create(payload);
   return result;
