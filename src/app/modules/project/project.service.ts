@@ -20,11 +20,13 @@ const getAllProjectsFromDb = async (query: Record<string, unknown>) => {
   return result;
 };
 
+// get single project from db
 const getSingleProjectFromDb = async (id: string) => {
   const result = await Project.findById(id);
   return result;
 };
 
+// update project
 const updateSingleProjectIntoDb = async (id: string, payload: TProject) => {
   const result = await Project.findOneAndUpdate({ _id: id }, payload, {
     new: true,
