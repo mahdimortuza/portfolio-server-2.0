@@ -24,6 +24,7 @@ const createBlogValidation = z.object({
   }),
 });
 
+// validation for update data
 const updateBlogValidation = z.object({
   body: z.object({
     title: z
